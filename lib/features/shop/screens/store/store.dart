@@ -25,7 +25,7 @@ class StoreScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 5,
+      length: 6,
       child: Scaffold(
         appBar: TAppBar(
           title: Text('Store', style: Theme.of(context).textTheme.headlineMedium),
@@ -72,7 +72,7 @@ class StoreScreen extends StatelessWidget {
                   Tab(child: Text('Furnitures'),),
                   Tab(child: Text('Electronics'),),
                   Tab(child: Text('Clothes'),),
-                  Tab(child: Text('Others'),),      
+                  Tab(child: Text('Others'),),
                   Tab(child: Text('New Others'),),      
               ]),
             ),

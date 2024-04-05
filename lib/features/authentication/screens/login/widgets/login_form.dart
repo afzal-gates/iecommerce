@@ -17,37 +17,53 @@ class TLoginForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Form(
       child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: TSizes.spaceBtwSections),
-          child: Column(
+          padding:
+              const EdgeInsets.symmetric(vertical: TSizes.spaceBtwSections),
+          child: Column(children: [
+            TextFormField(
+                decoration: InputDecoration(
+                    prefixIcon: Icon(Iconsax.direct_right),
+                    labelText: TTexts.email)),
+            const SizedBox(height: TSizes.spaceBtwInputFields),
+            TextFormField(
+                decoration: InputDecoration(
+                    prefixIcon: Icon(Iconsax.password_check),
+                    labelText: TTexts.password,
+                    suffixIcon: Icon(Iconsax.eye_slash))),
+            const SizedBox(height: TSizes.spaceBtwInputFields / 2),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                TextFormField(decoration: InputDecoration(prefixIcon: Icon(Iconsax.direct_right), labelText: TTexts.email)),
-                const SizedBox(height: TSizes.spaceBtwInputFields),
-                TextFormField(decoration: InputDecoration(prefixIcon: Icon(Iconsax.password_check), labelText: TTexts.password, suffixIcon: Icon(Iconsax.eye_slash))),
-                const SizedBox(height: TSizes.spaceBtwInputFields/2),
+                ///Remember me
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    ///Remember me
-                    Row(
-                      children: [
-                        Checkbox(value: true, onChanged: (value){}),
-                        const Text(TTexts.rememberMe)
-                      ],
-                    ),
-                    /// Forget Password
-                    TextButton(onPressed: ()=> Get.to(()=> const ForgetPassword()), child: const Text(TTexts.forgetPassword))
+                    Checkbox(value: true, onChanged: (value) {}),
+                    const Text(TTexts.rememberMe)
                   ],
                 ),
-                const SizedBox(height: TSizes.spaceBtwSections),
-                //Sign in button
-                SizedBox(width: double.infinity, child: ElevatedButton(onPressed: () => Get.to(() => const NavigationMenu()), child: const Text(TTexts.signIn))),
-                const SizedBox(height: TSizes.spaceBtwItems),
-                //create account button
-                SizedBox(width: double.infinity, child: OutlinedButton(onPressed: () => Get.to(() => const SignupScreen()), child: const Text(TTexts.createAccount))),
-                // const SizedBox(height: TSizes.spaceBtwSections),
-              ]
-          )
-      ),
+
+                /// Forget Password
+                TextButton(
+                    onPressed: () => Get.to(() => const ForgetPassword()),
+                    child: const Text(TTexts.forgetPassword))
+              ],
+            ),
+            const SizedBox(height: TSizes.spaceBtwSections),
+            //Sign in button
+            SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                    onPressed: () => Get.to(() => const NavigationMenu()),
+                    child: const Text(TTexts.signIn))),
+            const SizedBox(height: TSizes.spaceBtwItems),
+            //create account button
+            SizedBox(
+                width: double.infinity,
+                child: OutlinedButton(
+                    onPressed: () => Get.to(() => const SignupScreen()),
+                    child: const Text(TTexts.createAccount))),
+            // const SizedBox(height: TSizes.spaceBtwSections),
+          ])),
     );
   }
 }

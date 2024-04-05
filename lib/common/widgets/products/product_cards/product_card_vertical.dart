@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:iecommerce/common/styles/shadow.dart';
 import 'package:iecommerce/common/widgets/custom_shapes/containers/rounded_container.dart';
@@ -7,6 +8,7 @@ import 'package:iecommerce/common/widgets/images/rounded_image.dart';
 import 'package:iecommerce/common/widgets/texts/brand_title_text_with_verified_icon.dart';
 import 'package:iecommerce/common/widgets/texts/product_price_text.dart';
 import 'package:iecommerce/common/widgets/texts/product_title_text.dart';
+import 'package:iecommerce/features/shop/screens/product_details/product_details.dart';
 import 'package:iecommerce/utils/constants/colors.dart';
 import 'package:iecommerce/utils/constants/image_strings.dart';
 import 'package:iecommerce/utils/constants/sizes.dart';
@@ -20,7 +22,7 @@ class TProductCardVertical extends StatelessWidget {
 
     /// Container with side paddings, color, edges, radius and shadow.
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(()=> const ProfileDetailScreen()),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
