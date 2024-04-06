@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:iecommerce/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:iecommerce/common/widgets/products/ratings/rating_indicator.dart';
 import 'package:iecommerce/utils/constants/colors.dart';

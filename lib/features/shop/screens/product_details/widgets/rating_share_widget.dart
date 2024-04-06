@@ -1,13 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:iecommerce/common/widgets/appbar/appbar.dart';
-import 'package:iecommerce/common/widgets/custom_shapes/curved_edges/curved_edge_widget.dart';
-import 'package:iecommerce/common/widgets/icons/circular_icon.dart';
-import 'package:iecommerce/common/widgets/images/rounded_image.dart';
-import 'package:iecommerce/utils/constants/colors.dart';
-import 'package:iecommerce/utils/constants/image_strings.dart';
 import 'package:iecommerce/utils/constants/sizes.dart';
-import 'package:iecommerce/utils/helpers/helper_functions.dart';
 
 class TRatingAndShare extends StatelessWidget {
   const TRatingAndShare({

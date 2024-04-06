@@ -59,7 +59,7 @@ class TProductAttributes extends StatelessWidget {
               ]),
 
               ///Vertical Description
-              TProductTitleText(
+              const TProductTitleText(
                 title: 'This id the description of the product and it can show upto 4 lines.',
                 smallSize: true,
                 maxLines: 4,

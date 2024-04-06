@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:iecommerce/common/styles/shadow.dart';
 import 'package:iecommerce/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:iecommerce/common/widgets/icons/circular_icon.dart';
 import 'package:iecommerce/common/widgets/images/rounded_image.dart';

@@ -21,12 +21,12 @@ class TLoginForm extends StatelessWidget {
               const EdgeInsets.symmetric(vertical: TSizes.spaceBtwSections),
           child: Column(children: [
             TextFormField(
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                     prefixIcon: Icon(Iconsax.direct_right),
                     labelText: TTexts.email)),
             const SizedBox(height: TSizes.spaceBtwInputFields),
             TextFormField(
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                     prefixIcon: Icon(Iconsax.password_check),
                     labelText: TTexts.password,
                     suffixIcon: Icon(Iconsax.eye_slash))),

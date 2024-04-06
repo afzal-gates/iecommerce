@@ -35,7 +35,7 @@ class SettingsScreen extends StatelessWidget {
             ),
 
             Padding(
-                padding: EdgeInsets.all(TSizes.defaultSpace),
+                padding: const EdgeInsets.all(TSizes.defaultSpace),
               child: Column(
                 children: [
                   const TSectionHeading(title: 'Account Settings',showActionButton: false,),
@@ -43,17 +43,17 @@ class SettingsScreen extends StatelessWidget {
                   TSettingsMenuTile(icon: Iconsax.safe_home, title: 'My Addresses', subTitle: 'Set shopping delivery address', onTap: ()=> Get.to(()=> const UserAddressScreen()),),
                   TSettingsMenuTile (icon: Iconsax.shopping_cart, title: 'My Cart', subTitle: 'Add, remove products and move to checkout', onTap: ()=> Get.to(()=> const CheckoutScreen())), 
                   TSettingsMenuTile (icon: Iconsax.bag_tick, title: 'My Orders', subTitle: 'In-progress and Completed Orders', onTap: ()=> Get.to(()=> const OrderScreen())),
-                  TSettingsMenuTile (icon: Iconsax.bank, title: 'Bank Account', subTitle: 'Withdraw balance to registered bank account'), 
-                  TSettingsMenuTile (icon: Iconsax.discount_shape, title: 'My Coupons', subTitle: 'List of all the discounted coupons'), 
-                  TSettingsMenuTile (icon: Iconsax.notification, title: 'Notifications', subTitle: 'Set any kind of notification message'), 
-                  TSettingsMenuTile (icon: Iconsax.security_card, title: 'Account Privacy', subTitle: 'Manage data usage and connected accounts'),
+                  const TSettingsMenuTile (icon: Iconsax.bank, title: 'Bank Account', subTitle: 'Withdraw balance to registered bank account'), 
+                  const TSettingsMenuTile (icon: Iconsax.discount_shape, title: 'My Coupons', subTitle: 'List of all the discounted coupons'), 
+                  const TSettingsMenuTile (icon: Iconsax.notification, title: 'Notifications', subTitle: 'Set any kind of notification message'), 
+                  const TSettingsMenuTile (icon: Iconsax.security_card, title: 'Account Privacy', subTitle: 'Manage data usage and connected accounts'),
 
                   /// App Settings
-                  SizedBox (height: TSizes.spaceBtwSections),
+                  const SizedBox (height: TSizes.spaceBtwSections),
 
-                  TSectionHeading (title: 'App Settings', showActionButton: false),
-                  SizedBox(height: TSizes.spaceBtwItems),
-                  TSettingsMenuTile (icon: Iconsax.document_upload, title: 'Load Data', subTitle: 'Upload Data to your Cloud Firebase'),
+                  const TSectionHeading (title: 'App Settings', showActionButton: false),
+                  const SizedBox(height: TSizes.spaceBtwItems),
+                  const TSettingsMenuTile (icon: Iconsax.document_upload, title: 'Load Data', subTitle: 'Upload Data to your Cloud Firebase'),
 
                   TSettingsMenuTile(
                     icon: Iconsax.location,

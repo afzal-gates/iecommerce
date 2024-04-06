@@ -29,11 +29,11 @@ class OnBoardingScreen extends StatelessWidget {
             ],
           ),
           //skip Button
-          OnBoardSkip(),
+          const OnBoardSkip(),
           //Dot Navigation
-          OnBoardingDotNavigation(),
+          const OnBoardingDotNavigation(),
           //Circular Button
-          OnBoardingNextButton()
+          const OnBoardingNextButton()
         ],
       ),
 

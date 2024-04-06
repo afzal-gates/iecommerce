@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/widgets.dart';
 import 'package:iecommerce/common/widgets/appbar/appbar.dart';
 import 'package:iecommerce/common/widgets/icons/circular_icon.dart';
 import 'package:iecommerce/common/widgets/layouts/grid_layout.dart';

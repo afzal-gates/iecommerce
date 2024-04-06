@@ -27,7 +27,7 @@ class TFormatter {
   // Not fully tested.
   static String internationalFormatPhoneNumber(String phoneNumber) {
     // Remove any non-digit characters from the phone number
-    var digitsOnly = phoneNumber.replaceAll(RegExp('\D'), '');
+    var digitsOnly = phoneNumber.replaceAll(RegExp('D'), '');
 
     // Extract the country code from the digitsOnly 
     String countryCode = '+${digitsOnly.substring(0, 2)}';

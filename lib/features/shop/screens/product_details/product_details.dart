@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:iecommerce/common/widgets/appbar/appbar.dart';
-import 'package:iecommerce/common/widgets/custom_shapes/curved_edges/curved_edge_widget.dart';
-import 'package:iecommerce/common/widgets/icons/circular_icon.dart';
-import 'package:iecommerce/common/widgets/images/rounded_image.dart';
 import 'package:iecommerce/common/widgets/texts/section_heading.dart';
 import 'package:iecommerce/features/shop/screens/product_details/widgets/bottom_add_to_card.dart';
 import 'package:iecommerce/features/shop/screens/product_details/widgets/product_attributes.dart';
@@ -12,8 +8,6 @@ import 'package:iecommerce/features/shop/screens/product_details/widgets/product
 import 'package:iecommerce/features/shop/screens/product_details/widgets/product_mete_data.dart';
 import 'package:iecommerce/features/shop/screens/product_details/widgets/rating_share_widget.dart';
 import 'package:iecommerce/features/shop/screens/product_reviews/product_reviews.dart';
-import 'package:iecommerce/utils/constants/colors.dart';
-import 'package:iecommerce/utils/constants/image_strings.dart';
 import 'package:iecommerce/utils/constants/sizes.dart';
 import 'package:iecommerce/utils/helpers/helper_functions.dart';
 import 'package:readmore/readmore.dart';
@@ -25,12 +19,12 @@ class ProfileDetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
     return Scaffold(
-      bottomNavigationBar: TBottomAddToCart(),
+      bottomNavigationBar: const TBottomAddToCart(),
       body: SingleChildScrollView(
         child: Column(
           children: [
             // Image Slider
-            TProductImageSlider(),
+            const TProductImageSlider(),
 
             // Product Details
             Padding(
@@ -40,14 +34,14 @@ class ProfileDetailScreen extends StatelessWidget {
                     bottom: TSizes.defaultSpace),
                 child: Column(children: [
                   /// Rating & Share Button
-                  TRatingAndShare(),
-                  TProductMetaData(),
+                  const TRatingAndShare(),
+                  const TProductMetaData(),
 
-                  TProductAttributes(),
+                  const TProductAttributes(),
                   const SizedBox(height: TSizes.spaceBtwSections),
 
                   //Checkout Button
-                  SizedBox (width: double.infinity, child: ElevatedButton (onPressed: () {}, child: Text('Checkout'))),
+                  SizedBox (width: double.infinity, child: ElevatedButton (onPressed: () {}, child: const Text('Checkout'))),
                   const SizedBox (height: TSizes.spaceBtwSections),
 
                   /// Description

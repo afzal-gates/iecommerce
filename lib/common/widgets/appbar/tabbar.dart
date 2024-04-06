@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:iecommerce/utils/constants/colors.dart';
-import 'package:iecommerce/utils/constants/sizes.dart';
 import 'package:iecommerce/utils/device/device_utility.dart';
 import 'package:iecommerce/utils/helpers/helper_functions.dart';
 
