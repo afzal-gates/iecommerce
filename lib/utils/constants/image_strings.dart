@@ -26,4 +26,11 @@ class TImages {
   static const String productImage1 = "assets/images/banners/facebook-icon.png";
   static const String productImage2 = "assets/images/banners/google-icon.png";
   static const String productImage3 = "assets/images/banners/youtube-icon.png";
+
+  static const String paypal = "assets/icons/payment_methods/paypal.png";
+  static const String applePay = "assets/icons/payment_methods/apypal.png";
+  static const String googlePay = "assets/icons/payment_methods/apypal.png";
+  static const String creditCard = "assets/icons/payment_methods/apypal.png";
+  static const String masterCard = "assets/icons/payment_methods/apypal.png";
+
 }

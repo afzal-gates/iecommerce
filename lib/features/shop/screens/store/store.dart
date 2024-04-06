@@ -1,21 +1,15 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+import 'package:get/get.dart';
 import 'package:iecommerce/common/widgets/appbar/appbar.dart';
 import 'package:iecommerce/common/widgets/appbar/tabbar.dart';
-import 'package:iecommerce/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:iecommerce/common/widgets/custom_shapes/containers/search_container.dart';
-import 'package:iecommerce/common/widgets/images/circular_image.dart';
 import 'package:iecommerce/common/widgets/layouts/grid_layout.dart';
 import 'package:iecommerce/common/widgets/products/brand_card/brand_card.dart';
-import 'package:iecommerce/common/widgets/products/brand_card/brand_showcase.dart';
 import 'package:iecommerce/common/widgets/products/cart/cart_menu_icon.dart';
-import 'package:iecommerce/common/widgets/texts/brand_title_text_with_verified_icon.dart';
 import 'package:iecommerce/common/widgets/texts/section_heading.dart';
+import 'package:iecommerce/features/shop/screens/cart/cart.dart';
 import 'package:iecommerce/features/shop/screens/store/widgets/category_tab.dart';
 import 'package:iecommerce/utils/constants/colors.dart';
-import 'package:iecommerce/utils/constants/enums.dart';
-import 'package:iecommerce/utils/constants/image_strings.dart';
 import 'package:iecommerce/utils/constants/sizes.dart';
 import 'package:iecommerce/utils/helpers/helper_functions.dart';
 
@@ -24,13 +18,14 @@ class StoreScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dark = THelperFunctions.isDarkMode(context);
     return DefaultTabController(
       length: 6,
       child: Scaffold(
         appBar: TAppBar(
           title: Text('Store', style: Theme.of(context).textTheme.headlineMedium),
           actions: [
-            TCartCounterIcon(onPressed: (){})
+            TCartCounterIcon(onPressed: ()=> Get.to(()=> const CartScreen()), iconColor: dark?  TColors.white: TColors.darkGrey)
           ],
         ),
         body: NestedScrollView(
