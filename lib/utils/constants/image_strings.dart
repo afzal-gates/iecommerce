@@ -17,7 +17,7 @@ class TImages {
   static const String deliveredEmailIllustration = "assets/logos/google-icon.png";
   static const String staticSuccessIllustration = "assets/logos/facebook-icon.png";
 
-  static const String shoeIcon = "assets/logos/facebook-icon.png";
+  static const String shoeIcon = "assets/images/banners/facebook-icon.png";
 
   static const String promoBanner1 = "assets/images/banners/facebook-icon.png";
   static const String promoBanner2 = "assets/images/banners/google-icon.png";

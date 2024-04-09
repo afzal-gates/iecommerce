@@ -5,6 +5,7 @@ import 'package:iecommerce/common/styles/shadow.dart';
 import 'package:iecommerce/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:iecommerce/common/widgets/icons/circular_icon.dart';
 import 'package:iecommerce/common/widgets/images/rounded_image.dart';
+import 'package:iecommerce/common/widgets/products/favourite_icon/favourite_icon.dart';
 import 'package:iecommerce/common/widgets/texts/brand_title_text_with_verified_icon.dart';
 import 'package:iecommerce/common/widgets/texts/product_price_text.dart';
 import 'package:iecommerce/common/widgets/texts/product_title_text.dart';
@@ -62,7 +63,7 @@ class TProductCardVertical extends StatelessWidget {
                 const Positioned(
                   top: 0,
                   right: 0,
-                  child: TCircularIcon(icon: Iconsax.heart, color: Colors.red),
+                  child: TFavouriteIcon(productId: '1'),
                 ),
               ])),
 

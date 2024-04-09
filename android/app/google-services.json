@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "331751965037",
+    "project_id": "iecommerce-9f104",
+    "storage_bucket": "iecommerce-9f104.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:331751965037:android:27c248fa517f270adb5a64",
+        "android_client_info": {
+          "package_name": "com.example.iecommerce"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQEIgg7PayiWprp7lvw12Um5Rp7YKmySk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
